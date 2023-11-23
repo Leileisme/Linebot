@@ -6,20 +6,18 @@ export default () => {
       url: 'https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_1_cafe.png',
       size: 'full',
       aspectRatio: '20:13',
-      aspectMode: 'cover',
-      action: {
-        type: 'uri',
-        uri: 'http://linecorp.com/'
-      }
+      aspectMode: 'cover'
     },
     body: {
       type: 'box',
       layout: 'vertical',
+      backgroundColor: '#212529',
       contents: [
         {
           type: 'text',
           text: 'Brown Cafe',
           weight: 'bold',
+          color: '#ffffff',
           size: 'xl'
         },
         {
@@ -36,7 +34,7 @@ export default () => {
                 {
                   type: 'text',
                   text: 'Place',
-                  color: '#aaaaaa',
+                  color: '#cccccc',
                   size: 'sm',
                   flex: 6
                 },
@@ -44,7 +42,8 @@ export default () => {
                   type: 'text',
                   text: 'Miraina Tower, 4-1-6 Shinjuku, Tokyo',
                   wrap: true,
-                  color: '#666666',
+                  color: '#ffc107',
+                  weight: 'bold',
                   size: 'lg',
                   flex: 3,
                   margin: 'xxl'
@@ -53,7 +52,7 @@ export default () => {
                   type: 'text',
                   text: 'Miraina Tower, 4-1-6 Shinjuku, Tokyo',
                   wrap: true,
-                  color: '#aaaaaa',
+                  color: '#cccccc',
                   size: 'sm',
                   flex: 3
                 }
@@ -67,7 +66,7 @@ export default () => {
                 {
                   type: 'text',
                   text: 'Time',
-                  color: '#aaaaaa',
+                  color: '#cccccc',
                   size: 'sm',
                   flex: 6
                 },
@@ -75,7 +74,8 @@ export default () => {
                   type: 'text',
                   text: '10:00 - 23:00',
                   wrap: true,
-                  color: '#666666',
+                  color: '#ffc107',
+                  weight: 'bold',
                   size: 'lg',
                   flex: 3,
                   margin: 'xxl'
@@ -84,13 +84,33 @@ export default () => {
                   type: 'text',
                   text: '10:00 - 23:00',
                   wrap: true,
-                  color: '#aaaaaa',
+                  color: '#cccccc',
                   size: 'sm',
                   flex: 3
                 }
               ]
             }
           ]
+        }
+      ]
+    },
+    footer: {
+      type: 'box',
+      layout: 'vertical',
+      backgroundColor: '#212529',
+      spacing: 'sm',
+      flex: 0,
+      contents: [
+        {
+          type: 'button',
+          style: 'secondary',
+          height: 'sm',
+          color: '#e9ecef',
+          action: {
+            type: 'message',
+            label: 'action',
+            text: 'hello'
+          }
         }
       ]
     }

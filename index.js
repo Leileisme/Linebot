@@ -2,8 +2,15 @@
 import 'dotenv/config'
 import linebot from 'linebot'
 import vegetable from './reply/vegetable.js'
-// import fs from 'fs'
-// import vegetableTemplates from './templates/vegetable_templates.js'
+import { scheduleJob } from 'node-schedule'
+import * as vegetables from './data/vegetables_data.js'
+
+// 定期更新
+scheduleJob('0 0 * * *', () => {
+  vegetables.update()
+})
+
+vegetables.update()
 
 // 我的機器人
 const bot = linebot({
@@ -18,9 +25,7 @@ bot.on('message', (event) => {
   }
 
   if (event.message.type === 'text') {
-    if (event.message.text === '蔬菜') {
-      vegetable(event)
-    }
+    vegetable(event)
   }
 })
 
