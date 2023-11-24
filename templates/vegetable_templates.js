@@ -103,14 +103,20 @@ export default () => {
       contents: [
         {
           type: 'button',
-          style: 'secondary',
+          style: 'primary',
           height: 'sm',
-          color: '#e9ecef',
+          color: '#343a40',
           action: {
             type: 'message',
             label: 'action',
             text: 'hello'
           }
+        },
+        {
+          type: 'box',
+          layout: 'vertical',
+          contents: [],
+          margin: 'lg'
         }
       ]
     }

@@ -2,6 +2,7 @@
 import 'dotenv/config'
 import linebot from 'linebot'
 import vegetable from './reply/vegetable.js'
+import market from './reply/market.js'
 import { scheduleJob } from 'node-schedule'
 import * as vegetables from './data/vegetables_data.js'
 
@@ -25,7 +26,11 @@ bot.on('message', (event) => {
   }
 
   if (event.message.type === 'text') {
-    vegetable(event)
+    if (event.message.text === '我可以去哪裡買呢~') {
+      market(event)
+    } else {
+      vegetable(event)
+    }
   }
 })
 

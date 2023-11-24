@@ -1,6 +1,6 @@
 import { vegetablesData } from '../data/vegetables_data.js'
 import _ from 'lodash'
-// import fs from 'node:fs'
+import fs from 'node:fs'
 
 export default async (e) => {
   try {
@@ -8,7 +8,7 @@ export default async (e) => {
       return vegetableTemplate.body.contents[0].text.includes(e.message.text)
     })
 
-    const replies = _.chunk(data, 5)
+    const replies = _.chunk(data, 10)
       .slice(0, 3)
       .map((reply) => {
         return {
@@ -21,11 +21,17 @@ export default async (e) => {
         }
       })
 
+    try {
+      fs.writeFileSync('./debug/vegetable.json', JSON.stringify(replies, null, 2))
+    } catch (error) {
+      console.log('寫入錯誤', error)
+    }
+
     let result
     if (replies.length > 0) {
       result = await e.reply(replies)
     } else {
-      result = await e.reply('找不到，試試單詞，例：柚子、西瓜....')
+      result = await e.reply('找不到QQ')
     }
     console.log(result)
   } catch (error) {

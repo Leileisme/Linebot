@@ -16,7 +16,7 @@ export const update = async () => {
   vegetablesData.splice(0, vegetablesData.length)
   try {
     for (let i = 1; i <= 31; i++) {
-      console.log('更新水果: ' + i)
+      // console.log('更新水果: ' + i)
       const { data } = await axios.get(`https://www.twfood.cc/fruit?page=${i}&per-page=5`)
       // console.log(data)
       const $ = cheerio.load(data)
@@ -40,7 +40,7 @@ export const update = async () => {
     }
 
     for (let i = 1; i <= 57; i++) {
-      console.log('更新蔬菜: ' + i)
+      // console.log('更新蔬菜: ' + i)
       const { data } = await axios.get(`https://www.twfood.cc/vege?page=${i}&per-page=5`)
       // console.log(data)
       const $ = cheerio.load(data)
@@ -61,7 +61,7 @@ export const update = async () => {
         template.body.contents[0].text = title
         // 以下待更新
         template.footer.contents[0].action.label = '我現在就想要！'
-        template.footer.contents[0].action.text = '傳統市場vs量販店'
+        template.footer.contents[0].action.text = '我可以去哪裡買呢~'
         vegetablesData.push(template)
       })
     }
