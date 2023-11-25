@@ -312,6 +312,776 @@
               }
             ]
           }
+        },
+        {
+          "type": "bubble",
+          "hero": {
+            "type": "image",
+            "url": "https://www.twfood.cc/img/code/SG7/_.jpg",
+            "size": "full",
+            "aspectRatio": "20:13",
+            "aspectMode": "cover"
+          },
+          "body": {
+            "type": "box",
+            "layout": "vertical",
+            "backgroundColor": "#212529",
+            "contents": [
+              {
+                "type": "text",
+                "text": "大蒜-蒜瓣",
+                "weight": "bold",
+                "color": "#ffffff",
+                "size": "xl"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "margin": "lg",
+                "spacing": "sm",
+                "contents": [
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "spacing": "sm",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "text": "預估零售價",
+                        "color": "#cccccc",
+                        "size": "sm",
+                        "flex": 6
+                      },
+                      {
+                        "type": "text",
+                        "text": "173 ",
+                        "wrap": true,
+                        "color": "#ffc107",
+                        "weight": "bold",
+                        "size": "lg",
+                        "flex": 3,
+                        "margin": "xxl"
+                      },
+                      {
+                        "type": "text",
+                        "text": "元 /台斤",
+                        "wrap": true,
+                        "color": "#cccccc",
+                        "size": "sm",
+                        "flex": 3
+                      }
+                    ]
+                  },
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "spacing": "sm",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "text": "平均批發價(本周)",
+                        "color": "#cccccc",
+                        "size": "sm",
+                        "flex": 6
+                      },
+                      {
+                        "type": "text",
+                        "text": "86.4 ",
+                        "wrap": true,
+                        "color": "#ffc107",
+                        "weight": "bold",
+                        "size": "lg",
+                        "flex": 3,
+                        "margin": "xxl"
+                      },
+                      {
+                        "type": "text",
+                        "text": "元 /台斤",
+                        "wrap": true,
+                        "color": "#cccccc",
+                        "size": "sm",
+                        "flex": 3
+                      }
+                    ]
+                  },
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "spacing": "sm",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "text": "Time",
+                        "color": "#cccccc",
+                        "size": "sm",
+                        "flex": 6
+                      },
+                      {
+                        "type": "text",
+                        "text": "10:00",
+                        "wrap": true,
+                        "color": "#ffc107",
+                        "weight": "bold",
+                        "size": "lg",
+                        "flex": 3,
+                        "margin": "xxl"
+                      },
+                      {
+                        "type": "text",
+                        "text": "10:00 ",
+                        "wrap": true,
+                        "color": "#cccccc",
+                        "size": "sm",
+                        "flex": 3
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "footer": {
+            "type": "box",
+            "layout": "vertical",
+            "backgroundColor": "#212529",
+            "spacing": "sm",
+            "flex": 0,
+            "contents": [
+              {
+                "type": "button",
+                "style": "primary",
+                "height": "sm",
+                "color": "#343a40",
+                "action": {
+                  "type": "message",
+                  "label": "我現在就想要！",
+                  "text": "我可以去哪裡買呢~"
+                }
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [],
+                "margin": "lg"
+              }
+            ]
+          }
+        },
+        {
+          "type": "bubble",
+          "hero": {
+            "type": "image",
+            "url": "https://www.twfood.cc/img/code/SG5/_.jpg",
+            "size": "full",
+            "aspectRatio": "20:13",
+            "aspectMode": "cover"
+          },
+          "body": {
+            "type": "box",
+            "layout": "vertical",
+            "backgroundColor": "#212529",
+            "contents": [
+              {
+                "type": "text",
+                "text": "大蒜-蒜頭",
+                "weight": "bold",
+                "color": "#ffffff",
+                "size": "xl"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "margin": "lg",
+                "spacing": "sm",
+                "contents": [
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "spacing": "sm",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "text": "預估零售價",
+                        "color": "#cccccc",
+                        "size": "sm",
+                        "flex": 6
+                      },
+                      {
+                        "type": "text",
+                        "text": "123 ",
+                        "wrap": true,
+                        "color": "#ffc107",
+                        "weight": "bold",
+                        "size": "lg",
+                        "flex": 3,
+                        "margin": "xxl"
+                      },
+                      {
+                        "type": "text",
+                        "text": "元 /台斤",
+                        "wrap": true,
+                        "color": "#cccccc",
+                        "size": "sm",
+                        "flex": 3
+                      }
+                    ]
+                  },
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "spacing": "sm",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "text": "平均批發價(本周)",
+                        "color": "#cccccc",
+                        "size": "sm",
+                        "flex": 6
+                      },
+                      {
+                        "type": "text",
+                        "text": "61.4 ",
+                        "wrap": true,
+                        "color": "#ffc107",
+                        "weight": "bold",
+                        "size": "lg",
+                        "flex": 3,
+                        "margin": "xxl"
+                      },
+                      {
+                        "type": "text",
+                        "text": "元 /台斤",
+                        "wrap": true,
+                        "color": "#cccccc",
+                        "size": "sm",
+                        "flex": 3
+                      }
+                    ]
+                  },
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "spacing": "sm",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "text": "Time",
+                        "color": "#cccccc",
+                        "size": "sm",
+                        "flex": 6
+                      },
+                      {
+                        "type": "text",
+                        "text": "10:00",
+                        "wrap": true,
+                        "color": "#ffc107",
+                        "weight": "bold",
+                        "size": "lg",
+                        "flex": 3,
+                        "margin": "xxl"
+                      },
+                      {
+                        "type": "text",
+                        "text": "10:00 ",
+                        "wrap": true,
+                        "color": "#cccccc",
+                        "size": "sm",
+                        "flex": 3
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "footer": {
+            "type": "box",
+            "layout": "vertical",
+            "backgroundColor": "#212529",
+            "spacing": "sm",
+            "flex": 0,
+            "contents": [
+              {
+                "type": "button",
+                "style": "primary",
+                "height": "sm",
+                "color": "#343a40",
+                "action": {
+                  "type": "message",
+                  "label": "我現在就想要！",
+                  "text": "我可以去哪裡買呢~"
+                }
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [],
+                "margin": "lg"
+              }
+            ]
+          }
+        },
+        {
+          "type": "bubble",
+          "hero": {
+            "type": "image",
+            "url": "https://www.twfood.cc/img/code/SG4/_.jpg",
+            "size": "full",
+            "aspectRatio": "20:13",
+            "aspectMode": "cover"
+          },
+          "body": {
+            "type": "box",
+            "layout": "vertical",
+            "backgroundColor": "#212529",
+            "contents": [
+              {
+                "type": "text",
+                "text": "大蒜-蔥蒜",
+                "weight": "bold",
+                "color": "#ffffff",
+                "size": "xl"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "margin": "lg",
+                "spacing": "sm",
+                "contents": [
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "spacing": "sm",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "text": "預估零售價",
+                        "color": "#cccccc",
+                        "size": "sm",
+                        "flex": 6
+                      },
+                      {
+                        "type": "text",
+                        "text": "107 ",
+                        "wrap": true,
+                        "color": "#ffc107",
+                        "weight": "bold",
+                        "size": "lg",
+                        "flex": 3,
+                        "margin": "xxl"
+                      },
+                      {
+                        "type": "text",
+                        "text": "元 /台斤",
+                        "wrap": true,
+                        "color": "#cccccc",
+                        "size": "sm",
+                        "flex": 3
+                      }
+                    ]
+                  },
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "spacing": "sm",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "text": "平均批發價(本周)",
+                        "color": "#cccccc",
+                        "size": "sm",
+                        "flex": 6
+                      },
+                      {
+                        "type": "text",
+                        "text": "53.4 ",
+                        "wrap": true,
+                        "color": "#ffc107",
+                        "weight": "bold",
+                        "size": "lg",
+                        "flex": 3,
+                        "margin": "xxl"
+                      },
+                      {
+                        "type": "text",
+                        "text": "元 /台斤",
+                        "wrap": true,
+                        "color": "#cccccc",
+                        "size": "sm",
+                        "flex": 3
+                      }
+                    ]
+                  },
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "spacing": "sm",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "text": "Time",
+                        "color": "#cccccc",
+                        "size": "sm",
+                        "flex": 6
+                      },
+                      {
+                        "type": "text",
+                        "text": "10:00",
+                        "wrap": true,
+                        "color": "#ffc107",
+                        "weight": "bold",
+                        "size": "lg",
+                        "flex": 3,
+                        "margin": "xxl"
+                      },
+                      {
+                        "type": "text",
+                        "text": "10:00 ",
+                        "wrap": true,
+                        "color": "#cccccc",
+                        "size": "sm",
+                        "flex": 3
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "footer": {
+            "type": "box",
+            "layout": "vertical",
+            "backgroundColor": "#212529",
+            "spacing": "sm",
+            "flex": 0,
+            "contents": [
+              {
+                "type": "button",
+                "style": "primary",
+                "height": "sm",
+                "color": "#343a40",
+                "action": {
+                  "type": "message",
+                  "label": "我現在就想要！",
+                  "text": "我可以去哪裡買呢~"
+                }
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [],
+                "margin": "lg"
+              }
+            ]
+          }
+        },
+        {
+          "type": "bubble",
+          "hero": {
+            "type": "image",
+            "url": "https://www.twfood.cc/img/code/SG3/_.jpg",
+            "size": "full",
+            "aspectRatio": "20:13",
+            "aspectMode": "cover"
+          },
+          "body": {
+            "type": "box",
+            "layout": "vertical",
+            "backgroundColor": "#212529",
+            "contents": [
+              {
+                "type": "text",
+                "text": "大蒜-蒜苔",
+                "weight": "bold",
+                "color": "#ffffff",
+                "size": "xl"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "margin": "lg",
+                "spacing": "sm",
+                "contents": [
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "spacing": "sm",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "text": "預估零售價",
+                        "color": "#cccccc",
+                        "size": "sm",
+                        "flex": 6
+                      },
+                      {
+                        "type": "text",
+                        "text": "202 ",
+                        "wrap": true,
+                        "color": "#ffc107",
+                        "weight": "bold",
+                        "size": "lg",
+                        "flex": 3,
+                        "margin": "xxl"
+                      },
+                      {
+                        "type": "text",
+                        "text": "元 /台斤",
+                        "wrap": true,
+                        "color": "#cccccc",
+                        "size": "sm",
+                        "flex": 3
+                      }
+                    ]
+                  },
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "spacing": "sm",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "text": "平均批發價(本周)",
+                        "color": "#cccccc",
+                        "size": "sm",
+                        "flex": 6
+                      },
+                      {
+                        "type": "text",
+                        "text": "100.8 ",
+                        "wrap": true,
+                        "color": "#ffc107",
+                        "weight": "bold",
+                        "size": "lg",
+                        "flex": 3,
+                        "margin": "xxl"
+                      },
+                      {
+                        "type": "text",
+                        "text": "元 /台斤",
+                        "wrap": true,
+                        "color": "#cccccc",
+                        "size": "sm",
+                        "flex": 3
+                      }
+                    ]
+                  },
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "spacing": "sm",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "text": "Time",
+                        "color": "#cccccc",
+                        "size": "sm",
+                        "flex": 6
+                      },
+                      {
+                        "type": "text",
+                        "text": "10:00",
+                        "wrap": true,
+                        "color": "#ffc107",
+                        "weight": "bold",
+                        "size": "lg",
+                        "flex": 3,
+                        "margin": "xxl"
+                      },
+                      {
+                        "type": "text",
+                        "text": "10:00 ",
+                        "wrap": true,
+                        "color": "#cccccc",
+                        "size": "sm",
+                        "flex": 3
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "footer": {
+            "type": "box",
+            "layout": "vertical",
+            "backgroundColor": "#212529",
+            "spacing": "sm",
+            "flex": 0,
+            "contents": [
+              {
+                "type": "button",
+                "style": "primary",
+                "height": "sm",
+                "color": "#343a40",
+                "action": {
+                  "type": "message",
+                  "label": "我現在就想要！",
+                  "text": "我可以去哪裡買呢~"
+                }
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [],
+                "margin": "lg"
+              }
+            ]
+          }
+        },
+        {
+          "type": "bubble",
+          "hero": {
+            "type": "image",
+            "url": "https://www.twfood.cc/img/code/SG1/_.jpg",
+            "size": "full",
+            "aspectRatio": "20:13",
+            "aspectMode": "cover"
+          },
+          "body": {
+            "type": "box",
+            "layout": "vertical",
+            "backgroundColor": "#212529",
+            "contents": [
+              {
+                "type": "text",
+                "text": "大蒜-硬梗",
+                "weight": "bold",
+                "color": "#ffffff",
+                "size": "xl"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "margin": "lg",
+                "spacing": "sm",
+                "contents": [
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "spacing": "sm",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "text": "預估零售價",
+                        "color": "#cccccc",
+                        "size": "sm",
+                        "flex": 6
+                      },
+                      {
+                        "type": "text",
+                        "text": "82 ",
+                        "wrap": true,
+                        "color": "#ffc107",
+                        "weight": "bold",
+                        "size": "lg",
+                        "flex": 3,
+                        "margin": "xxl"
+                      },
+                      {
+                        "type": "text",
+                        "text": "元 /台斤",
+                        "wrap": true,
+                        "color": "#cccccc",
+                        "size": "sm",
+                        "flex": 3
+                      }
+                    ]
+                  },
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "spacing": "sm",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "text": "平均批發價(本周)",
+                        "color": "#cccccc",
+                        "size": "sm",
+                        "flex": 6
+                      },
+                      {
+                        "type": "text",
+                        "text": "41 ",
+                        "wrap": true,
+                        "color": "#ffc107",
+                        "weight": "bold",
+                        "size": "lg",
+                        "flex": 3,
+                        "margin": "xxl"
+                      },
+                      {
+                        "type": "text",
+                        "text": "元 /台斤",
+                        "wrap": true,
+                        "color": "#cccccc",
+                        "size": "sm",
+                        "flex": 3
+                      }
+                    ]
+                  },
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "spacing": "sm",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "text": "Time",
+                        "color": "#cccccc",
+                        "size": "sm",
+                        "flex": 6
+                      },
+                      {
+                        "type": "text",
+                        "text": "10:00",
+                        "wrap": true,
+                        "color": "#ffc107",
+                        "weight": "bold",
+                        "size": "lg",
+                        "flex": 3,
+                        "margin": "xxl"
+                      },
+                      {
+                        "type": "text",
+                        "text": "10:00 ",
+                        "wrap": true,
+                        "color": "#cccccc",
+                        "size": "sm",
+                        "flex": 3
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "footer": {
+            "type": "box",
+            "layout": "vertical",
+            "backgroundColor": "#212529",
+            "spacing": "sm",
+            "flex": 0,
+            "contents": [
+              {
+                "type": "button",
+                "style": "primary",
+                "height": "sm",
+                "color": "#343a40",
+                "action": {
+                  "type": "message",
+                  "label": "我現在就想要！",
+                  "text": "我可以去哪裡買呢~"
+                }
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [],
+                "margin": "lg"
+              }
+            ]
+          }
         }
       ]
     }
