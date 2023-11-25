@@ -89,6 +89,38 @@ export default () => {
                   flex: 3
                 }
               ]
+            },
+            {
+              type: 'box',
+              layout: 'baseline',
+              spacing: 'sm',
+              contents: [
+                {
+                  type: 'text',
+                  text: 'Time',
+                  color: '#cccccc',
+                  size: 'sm',
+                  flex: 6
+                },
+                {
+                  type: 'text',
+                  text: '10:00',
+                  wrap: true,
+                  color: '#ffc107',
+                  weight: 'bold',
+                  size: 'lg',
+                  flex: 3,
+                  margin: 'xxl'
+                },
+                {
+                  type: 'text',
+                  text: '10:00 ',
+                  wrap: true,
+                  color: '#cccccc',
+                  size: 'sm',
+                  flex: 3
+                }
+              ]
             }
           ]
         }

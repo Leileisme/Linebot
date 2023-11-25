@@ -1,6 +1,7 @@
 import axios from 'axios'
 import * as cheerio from 'cheerio'
 import vegetableTemplates from '../templates/vegetable_templates.js'
+// import puppeteer from 'puppeteer'
 
 // 這個檔案是把網路的HTML資料存下來，以便機器人搜尋資料回覆
 // 另外在 index 檔案有使用 scheduleJob ，設定時更新
@@ -59,6 +60,7 @@ export const update = async () => {
         template.body.contents[1].contents[1].contents[2].text = '元 /台斤'
         template.hero.url = imgUrl
         template.body.contents[0].text = title
+
         // 以下待更新
         template.footer.contents[0].action.label = '我現在就想要！'
         template.footer.contents[0].action.text = '我可以去哪裡買呢~'
@@ -66,6 +68,43 @@ export const update = async () => {
       })
     }
     console.log('更新完成')
+
+    // 另一個網站的資料
+    // 這邊會跑不出來，因為跑太久了嗎
+    // const browser = await puppeteer.launch({ headless: 'new' })
+    // const pageFruit = await browser.newPage()
+    // const pageVegetable = await browser.newPage()
+    // console.log('browser')
+
+    // await pageFruit.goto('https://www.tapmc.com.tw/Pages/Trans/Price1')
+    // await pageVegetable.goto('https://www.tapmc.com.tw/Pages/Trans/Price1')
+    // console.log('goto')
+
+    // await pageFruit.select('#DDL_FV_Code', 'F')
+    // await pageFruit.evaluate(() => {
+    //   __doPostBack('ctl00$ContentPlaceHolder1$btnQuery', '')
+    // })
+    // await pageVegetable.evaluate(() => {
+    //   __doPostBack('ctl00$ContentPlaceHolder1$btnQuery', '')
+    // })
+    // console.log('evaluate')
+
+    // const delay = (ms) => {
+    //   return new Promise((resolve) => setTimeout(resolve, ms))
+    // }
+    // await delay(5000)
+    // console.log('delay')
+
+    // const dataFruit = await pageFruit.content()
+    // const dataVegetable = await pageVegetable.content()
+    // console.log('content')
+    // const $F = cheerio.load(dataFruit)
+    // const $V = cheerio.load(dataVegetable)
+
+    // console.log('預警水果', $F('tbody').find('tr').eq(0).find('td').eq(1).text())
+    // console.log('預警蔬菜', $V('tbody').find('tr').eq(0).find('td').eq(1).text())
+    // await browser.close()
+    // console.log('解析完網站')
   } catch (error) {
     console.log(error)
   }
