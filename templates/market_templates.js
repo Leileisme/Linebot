@@ -1,7 +1,7 @@
 export default () => {
   return {
     type: 'text', // 1
-    text: '你想要去哪邊買呢?',
+    text: '你想去哪裡買?',
     quickReply: {
       // 2
       items: [

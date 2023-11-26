@@ -97,16 +97,40 @@ export default () => {
               contents: [
                 {
                   type: 'text',
-                  text: 'Time',
+                  text: '行情預警',
                   color: '#cccccc',
                   size: 'sm',
                   flex: 6
                 },
                 {
                   type: 'text',
-                  text: '10:00',
+                  text: '---',
                   wrap: true,
-                  color: '#ffc107',
+                  color: '#cccccc',
+                  weight: 'bold',
+                  size: 'lg',
+                  flex: 6,
+                  margin: 'xxl'
+                }
+              ]
+            },
+            {
+              type: 'box',
+              layout: 'baseline',
+              spacing: 'sm',
+              contents: [
+                {
+                  type: 'text',
+                  text: '近5年同月批發價',
+                  color: '#cccccc',
+                  size: 'sm',
+                  flex: 6
+                },
+                {
+                  type: 'text',
+                  text: '---',
+                  wrap: true,
+                  color: '#cccccc',
                   weight: 'bold',
                   size: 'lg',
                   flex: 3,
@@ -114,8 +138,7 @@ export default () => {
                 },
                 {
                   type: 'text',
-                  text: '10:00 ',
-                  wrap: true,
+                  text: '元 /台斤',
                   color: '#cccccc',
                   size: 'sm',
                   flex: 3
