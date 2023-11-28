@@ -36,9 +36,9 @@ export const update = async () => {
     const dataFruit = await pageFruit.content()
     const $F = cheerio.load(dataFruit)
     // 資料的第一個tr種類
-    const F_tr = $F('tbody').find('tr').length - 1
+    const trFruit = $F('tbody').find('tr').length - 1
     await browser.close()
-    console.log('F_tr' + F_tr)
+    console.log('trFruit' + trFruit)
 
     // 【把蔬菜改成 axios 請求 會加速資料提取嗎?】
     // const pageVegetable = await browser.newPage()
@@ -48,7 +48,7 @@ export const update = async () => {
     // })
     // const dataVegetable = await pageVegetable.content()
     // const $V = cheerio.load(dataVegetable)
-    // const V_tr = $F('tbody').find('tr').length - 1
+    // const trVegetable = $V('tbody').find('tr').length - 1
 
     for (let i = 1; i <= 31; i++) {
       // console.log('更新水果: ' + i)
@@ -70,20 +70,20 @@ export const update = async () => {
         template.hero.url = imgUrl
         template.body.contents[0].text = title
         // 先把放入模板了
-        // template.body.contents[1].contents[2].contents[0].text = '行情預警'
-        // template.body.contents[1].contents[3].contents[0].text = '近5年同月批發價'
+        template.body.contents[1].contents[2].contents[0].text = '行情預警'
+        template.body.contents[1].contents[3].contents[0].text = '近5年同月批發價'
 
-        // for (let j = 1; j <= F_tr; j++) {
-        //   if (title.includes($F('tbody').find('tr').eq(j).find('td').eq(2).text())) {
-        //     const priceF = $F('tbody').find('tr').eq(j).find('td').eq(5).text()
-        //     template.body.contents[1].contents[2].contents[1].text = '警戒'
-        //     template.body.contents[1].contents[2].contents[1].color = '#ff0000'
-        //     template.body.contents[1].contents[3].contents[1].text = priceF * 0.6
-        //   } else {
-        //     template.body.contents[1].contents[2].contents[1].text = '無警戒'
-        //     template.body.contents[1].contents[3].contents[1].text = ''
-        //   }
-        // }
+        for (let j = 1; j <= trFruit; j++) {
+          if (title.includes($F('tbody').find('tr').eq(j).find('td').eq(2).text())) {
+            const priceF = $F('tbody').find('tr').eq(j).find('td').eq(5).text()
+            template.body.contents[1].contents[2].contents[1].text = '警戒'
+            template.body.contents[1].contents[2].contents[1].color = '#ff0000'
+            template.body.contents[1].contents[3].contents[1].text = priceF * 0.6
+          } else {
+            template.body.contents[1].contents[2].contents[1].text = '無警戒'
+            template.body.contents[1].contents[3].contents[1].text = ''
+          }
+        }
 
         // 用字待更新
         template.footer.contents[0].action.label = '我現在就想要！'
