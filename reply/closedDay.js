@@ -17,13 +17,10 @@ export default async (e) => {
         }
       })
 
-    try {
-      fs.writeFileSync('./debug/closedDay.json', JSON.stringify(replies, null, 2))
-    } catch (error) {
-      console.log(error)
-    }
-
-    console.log(replies)
+    // fs.writeFileSync('./debug/closedDay.json', JSON.stringify(replies, null, 2))
+    // console.log(replies)
+    const result = await e.reply(replies)
+    console.log(result)
   } catch (error) {
     console.log(error)
   }

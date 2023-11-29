@@ -1,6 +1,11 @@
 import axios from 'axios'
 import * as cheerio from 'cheerio'
 import vegetableTemplates from '../templates/vegetable_templates.js'
+import puppeteer from 'puppeteer'
+
+// 這個檔案是把網路的HTML資料存下來，以便機器人搜尋資料回覆
+// 另外在 index 檔案有使用 scheduleJob ，設定時更新
+// 原本都是 line訊息 進來時，機器人再去網站上抓取資料，但怕資料太大反應太慢
 
 // 這個「具名匯出」是為了給  reply > vegetable 資料用的
 export const vegetablesData = []
@@ -13,6 +18,27 @@ export const update = async () => {
   try {
     // 預警蔬果的資料
     // 查詢日期，會有預設查詢換日的問題
+    // await pageFruit.type('#ContentPlaceHolder1_txtDate', '112/11/25')
+    const browser = await puppeteer.launch({ headless: 'new' })
+
+    // 待用 Promise.allSettled 簡化
+    const pageFruit = await browser.newPage()
+    await pageFruit.goto('https://www.tapmc.com.tw/Pages/Trans/Signal')
+    await pageFruit.select('#DDL_Category', 'F')
+    await pageFruit.evaluate(() => {
+      __doPostBack('ctl00$ContentPlaceHolder1$btnQuery', '')
+    })
+    // 這邊等待時間長短 與Line機器人的關係?
+    const delay = (ms) => {
+      return new Promise((resolve) => setTimeout(resolve, ms))
+    }
+    await delay(2000)
+    const dataFruit = await pageFruit.content()
+    const $F = cheerio.load(dataFruit)
+    // 資料的第一個tr種類
+    const trFruit = $F('tbody').find('tr').length - 1
+    await browser.close()
+    console.log('trFruit' + trFruit)
 
     // 【把蔬菜改成 axios 請求 會加速資料提取嗎?】
     // const pageVegetable = await browser.newPage()
