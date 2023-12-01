@@ -33,7 +33,7 @@ export default () => {
               contents: [
                 {
                   type: 'text',
-                  text: 'Place',
+                  text: '預估零售價',
                   color: '#cccccc',
                   size: 'sm',
                   flex: 6
@@ -50,7 +50,7 @@ export default () => {
                 },
                 {
                   type: 'text',
-                  text: 'Miraina Tower, 4-1-6 Shinjuku, Tokyo',
+                  text: '元 /台斤',
                   wrap: true,
                   color: '#cccccc',
                   size: 'sm',
@@ -65,7 +65,7 @@ export default () => {
               contents: [
                 {
                   type: 'text',
-                  text: 'Time',
+                  text: '平均批發價(本周)',
                   color: '#cccccc',
                   size: 'sm',
                   flex: 6
@@ -82,7 +82,7 @@ export default () => {
                 },
                 {
                   type: 'text',
-                  text: '10:00 - 23:00',
+                  text: '元 /台斤',
                   wrap: true,
                   color: '#cccccc',
                   size: 'sm',
