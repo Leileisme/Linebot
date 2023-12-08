@@ -1,10 +1,10 @@
 import { closedDayData } from '../data/closedDay_data.js'
-// import fs from 'node:fs'
+import fs from 'node:fs'
 import _ from 'lodash'
 
 export default async (e) => {
   try {
-    const replies = _.chunk(closedDayData, 6)
+    const replies = _.chunk(closedDayData, 3)
       .slice(0, 1)
       .map((reply) => {
         return {
@@ -17,8 +17,10 @@ export default async (e) => {
         }
       })
 
-    // fs.writeFileSync('./debug/closedDay.json', JSON.stringify(replies, null, 2))
-    // console.log(replies)
+    if (process.env.DEBUG === 'true') {
+      fs.writeFileSync('./debug/closedDay.json', JSON.stringify(replies, null, 2))
+    }
+
     const result = await e.reply(replies)
     console.log(result)
   } catch (error) {

@@ -28,8 +28,7 @@ export const update = async () => {
     const { data: dataF } = await axios.post(
       'https://www.tapmc.com.tw/Pages/Trans/Signal',
       new url.URLSearchParams({
-        // ctl00$ContentPlaceHolder1$txtDate: `${year}/${month}/${date}`,
-        ctl00$ContentPlaceHolder1$txtDate: `${year}/${month}/03`,
+        ctl00$ContentPlaceHolder1$txtDate: `${year}/${month}/${date}`,
         ctl00$ContentPlaceHolder1$DDL_Category: 'F',
         __EVENTTARGET: 'ctl00$ContentPlaceHolder1$btnQuery',
         __EVENTARGUMENT: '',
@@ -51,7 +50,7 @@ export const update = async () => {
         const template = vegetableTemplates()
         const img = $(this).find('img').attr('src')
         const imgUrl = new URL(img, 'https://www.twfood.cc/')
-        const title = $(this).find('img').attr('alt')
+        const title = $(this).find('a').attr('href').replace(/[^\u4e00-\u9fa5]+/g, ' ').replace(/\s+/g, ' ').trim()
         const dayPrice = $(this).find('table').find('tr').eq(5).find('th').eq(0).text()
         const weekPrice = $(this).find('table').find('tr').eq(2).find('th').eq(0).text()
         template.body.contents[1].contents[0].contents[1].text = dayPrice
@@ -84,13 +83,13 @@ export const update = async () => {
         vegetablesData.push(template)
       })
     }
+    console.log('水果解析完畢')
 
     // 找出預警蔬菜
     const { data: dataV } = await axios.post(
       'https://www.tapmc.com.tw/Pages/Trans/Signal',
       new url.URLSearchParams({
-        // ctl00$ContentPlaceHolder1$txtDate: `${year}/${month}/${date}`,
-        ctl00$ContentPlaceHolder1$txtDate: `${year}/${month}/03`,
+        ctl00$ContentPlaceHolder1$txtDate: `${year}/${month}/${date}`,
         ctl00$ContentPlaceHolder1$DDL_Category: 'V',
         __EVENTTARGET: 'ctl00$ContentPlaceHolder1$btnQuery',
         __EVENTARGUMENT: '',
@@ -112,7 +111,10 @@ export const update = async () => {
         const template = vegetableTemplates()
         const img = $(this).find('img').attr('src')
         const imgUrl = new URL(img, 'https://www.twfood.cc/')
-        const title = $(this).find('img').attr('alt')
+        // 用正則表達式 / [\u4e00-\u9fa5] 抓取「中文」，並以 ' ' 空格取代其他字元
+        // 「/\s+/g」 將多個空格合併為一個
+        // 「.trim()」 去除字串兩端的空格
+        const title = $(this).find('a').attr('href').replace(/[^\u4e00-\u9fa5]+/g, ' ').replace(/\s+/g, ' ').trim()
         const dayPrice = $(this).find('table').find('tr').eq(5).find('th').eq(0).text()
         const weekPrice = $(this).find('table').find('tr').eq(2).find('th').eq(0).text()
         template.body.contents[1].contents[0].contents[1].text = dayPrice
@@ -143,7 +145,7 @@ export const update = async () => {
         vegetablesData.push(template)
       })
     }
-    console.log('解析完畢')
+    console.log('蔬菜解析完畢')
   } catch (error) {
     console.log(error)
   }

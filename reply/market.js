@@ -9,7 +9,7 @@ export default async (e) => {
     // 網址要用百分比編碼
     // (原本搜尋後面是寫中文 EX：https://www.google.com/maps/search/家樂福/)
     // https://developers.line.biz/en/reference/messaging-api/#other-common-specifications
-    template.quickReply.items[0].imageUrl = 'https://raw.githubusercontent.com/Leileisme/Linebot/main/images/Logo.jpg'
+    template.quickReply.items[0].imageUrl = 'https://raw.githubusercontent.com/Leileisme/Linebot/main/images/Logo_2.jpg'
     template.quickReply.items[0].action.uri = 'https://www.google.com/maps/search/%E5%B8%82%E5%A0%B4'
     template.quickReply.items[0].action.label = '傳統市場'
     template.quickReply.items[1].imageUrl = 'https://raw.githubusercontent.com/Leileisme/Linebot/main/images/quickReply_logo_01.jpg'

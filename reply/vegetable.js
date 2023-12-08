@@ -13,7 +13,7 @@ export default async (e) => {
       .map((reply) => {
         return {
           type: 'flex',
-          altText: '蔬果時價',
+          altText: '今天的蔬果多少錢ㄚ~~~',
           contents: {
             type: 'carousel',
             contents: reply
@@ -21,17 +21,18 @@ export default async (e) => {
         }
       })
 
-    try {
+    if (process.env.DEBUG === 'true') {
       fs.writeFileSync('./debug/vegetable.json', JSON.stringify(replies, null, 2))
-    } catch (error) {
-      console.log('寫入錯誤', error)
     }
 
     let result
     if (replies.length > 0) {
       result = await e.reply(replies)
     } else {
-      result = await e.reply('找不到QQ')
+      const random = Math.floor(Math.random() * 5)
+      const words = ['大蒜', '香蕉', '青江', '油麥菜', '猴頭菇']
+      const word = words[random]
+      result = await e.reply(`找不到QQ 用單詞查詢蔬果(如:${word})`)
     }
     console.log(result)
   } catch (error) {

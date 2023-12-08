@@ -26,11 +26,19 @@ bot.on('message', (event) => {
     console.log(event)
   }
 
+  const marketBuy = ['買', '購', 'buy', '哪裡', '賣']
+  const closed = ['休市日', '休市', '休', '營業時間', '營業', '時間', '日期', '市場']
+
   if (event.message.type === 'text') {
-    // 若我這邊的字很多，放另外一個檔案匯入會更好嗎?
-    if (event.message.text === '我可以去哪裡買呢~') {
+    const marketBuyMatch = marketBuy.filter(
+      el => event.message.text.includes(el))
+
+    const closedMatch = closed.filter(
+      el => event.message.text.includes(el))
+
+    if (marketBuyMatch.length > 0) {
       market(event)
-    } else if (event.message.text === '休市日') {
+    } else if (closedMatch.length > 0) {
       closedDay(event)
     } else {
       vegetable(event)
