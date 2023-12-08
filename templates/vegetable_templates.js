@@ -144,6 +144,49 @@ export default () => {
                   flex: 3
                 }
               ]
+            },
+            {
+              type: 'box',
+              layout: 'baseline',
+              spacing: 'sm',
+              margin: 'xxl',
+              contents: [
+                {
+                  type: 'text',
+                  text: '「--」為無資料、「警戒」為與近年比高低差過大',
+                  color: '#777777',
+                  size: 'xxs',
+                  flex: 12
+                }
+              ]
+            },
+            {
+              type: 'box',
+              layout: 'baseline',
+              spacing: 'sm',
+              contents: [
+                {
+                  type: 'text',
+                  text: '來源為每日介接「北農」與「TWFOOD」公開資料',
+                  color: '#777777',
+                  size: 'xxs',
+                  flex: 12
+                }
+              ]
+            },
+            {
+              type: 'box',
+              layout: 'baseline',
+              spacing: 'md',
+              contents: [
+                {
+                  type: 'text',
+                  text: '僅供參考方便推估市場價格，勿以此為殺價依據',
+                  color: '#777777',
+                  size: 'xxs',
+                  flex: 12
+                }
+              ]
             }
           ]
         }

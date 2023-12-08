@@ -13,10 +13,11 @@ export const closedDayUpload = async (e) => {
     for (let i = nowMonth; i <= 24; i++) {
       const template = closedDayTemplates()
       if (i < 13) {
-        template.body.contents[0].url = `https://raw.githubusercontent.com/Leileisme/Linebot/main/images/${nowYear}_${i}.jpg`
+        template.body.contents[0].url = `https://raw.githubusercontent.com/Leileisme/Linebot/main/images/deta_${nowYear}_${i}.jpg`
+
         closedDayData.push(template)
       } else {
-        template.body.contents[0].url = `https://raw.githubusercontent.com/Leileisme/Linebot/main/images/${
+        template.body.contents[0].url = `https://raw.githubusercontent.com/Leileisme/Linebot/main/images/deta_${
           nowYear + 1
         }_0${i - 12}.jpg`
         closedDayData.push(template)

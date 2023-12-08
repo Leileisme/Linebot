@@ -15,6 +15,7 @@ export default () => {
         },
         {
           type: 'action', // 3
+          imageUrl: 'https://example.com/sushi.png',
           action: {
             type: 'uri',
             uri: 'https://wdaweb.github.io',
@@ -23,6 +24,7 @@ export default () => {
         },
         {
           type: 'action', // 3
+          imageUrl: 'https://example.com/sushi.png',
           action: {
             type: 'uri',
             uri: 'https://wdaweb.github.io',
@@ -31,6 +33,7 @@ export default () => {
         },
         {
           type: 'action', // 3
+          imageUrl: 'https://example.com/sushi.png',
           action: {
             type: 'uri',
             uri: 'https://wdaweb.github.io',
@@ -39,6 +42,7 @@ export default () => {
         },
         {
           type: 'action', // 3
+          imageUrl: 'https://example.com/sushi.png',
           action: {
             type: 'uri',
             uri: 'https://wdaweb.github.io',
@@ -47,6 +51,7 @@ export default () => {
         },
         {
           type: 'action', // 3
+          imageUrl: 'https://example.com/sushi.png',
           action: {
             type: 'uri',
             uri: 'https://wdaweb.github.io',

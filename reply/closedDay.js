@@ -1,5 +1,5 @@
 import { closedDayData } from '../data/closedDay_data.js'
-import fs from 'node:fs'
+// import fs from 'node:fs'
 import _ from 'lodash'
 
 export default async (e) => {

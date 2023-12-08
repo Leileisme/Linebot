@@ -43,9 +43,7 @@ export const update = async () => {
 
     const $F = cheerio.load(dataF)
     const trFruit = $F('tbody').find('tr').length - 1
-    // console.log($F('tbody').find('tr').eq(1).find('td').eq(2).text(), '迴圈外的預警品種') // 這邊對
 
-    // 找出每一頁 title ，再與預警水果的「品種」比對(「進口」、「其他」還須想其他驗證)
     for (let i = 1; i <= 31; i++) {
       const { data } = await axios.get(`https://www.twfood.cc/fruit?page=${i}&per-page=5`)
       const $ = cheerio.load(data)
@@ -72,7 +70,6 @@ export const update = async () => {
             template.body.contents[1].contents[2].contents[1].color = '#ff0000'
             template.body.contents[1].contents[2].contents[1].size = 'lg'
             template.body.contents[1].contents[3].contents[1].text = priceF
-            // console.log($F('tbody').find('tr').eq(j).find('td').eq(2).text(), j, priceF)
             break
           } else {
             template.body.contents[1].contents[2].contents[1].text = '無警戒'
@@ -107,7 +104,6 @@ export const update = async () => {
 
     const $V = cheerio.load(dataV)
     const trVegetable = $V('tbody').find('tr').length - 1
-    console.log($V('tbody').find('tr').eq(1).find('td').eq(2).text(), '迴圈外的預警品種') // 這邊對
 
     for (let i = 1; i <= 57; i++) {
       const { data } = await axios.get(`https://www.twfood.cc/vege?page=${i}&per-page=5`)
@@ -123,7 +119,6 @@ export const update = async () => {
         template.body.contents[1].contents[1].contents[1].text = weekPrice
         template.hero.url = imgUrl
         template.body.contents[0].text = title
-        console.log(title)
 
         for (let j = 1; j <= trVegetable; j++) {
           if (
