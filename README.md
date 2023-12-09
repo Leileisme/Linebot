@@ -1,12 +1,14 @@
 # 小蔬-編號89467
 #### Linebot 蔬菜查價機器人
 
+<p>
 第一次去傳統市場完全不知道菜價...<br>
 不確定眼前的蔬菜往年行情在哪...<br>
 別擔心！我會協助你了解每日菜價<br>
 <br>
 點選下方「使用說明」或手動輸入<br>
 馬上開始查詢蔬果價格🥦<br>
+</p>
 -----------------------------------
 
 ## ID：@919kcvbu
@@ -32,6 +34,7 @@
 2. 哪裡買
 3. 使用說明
 <br>
+
 ![選單介面](https://raw.githubusercontent.com/Leileisme/Linebot/main/images/readme/menu.jpg)
 
 [返回目錄](#目錄)
@@ -61,6 +64,7 @@
 1. 「一次多詞」或「空白」 , 會影響搜尋結果
 2. 「換日」或「休市日」可能會查無資料
 <br>
+
 ![使用說明](https://raw.githubusercontent.com/Leileisme/Linebot/main/images/readme/manual.jpg)
 
 [返回目錄](#目錄)
@@ -71,6 +75,7 @@
 2. 若行情預警「警戒」則與比近年比「價差過高或過低」
 3. 點選下方「我現在就想要按鈕」，跳轉至「哪裡買」
 <br>
+
 ![休市日畫面01](https://raw.githubusercontent.com/Leileisme/Linebot/main/images/readme/date01.jpg)
 
 ![休市日畫面02](https://raw.githubusercontent.com/Leileisme/Linebot/main/images/readme/date02.jpg)
@@ -79,6 +84,7 @@
 
 -----------------------------------
 ## 「休市日」畫面
+
 ![休市日畫面](https://raw.githubusercontent.com/Leileisme/Linebot/main/images/readme/cloedDay.jpg)
 
 [返回目錄](#目錄)
@@ -87,6 +93,7 @@
 ##  「哪裡買」畫面
 下方出現 quick reply，使用者可選擇想去的商場，點選後連接 google map 搜尋
 <br>
+
 ![哪裡買01](https://raw.githubusercontent.com/Leileisme/Linebot/main/images/readme/market01.jpg)
 ![哪裡買02](https://github.com/Leileisme/Linebot/blob/main/images/readme/market02.jpg)
 
