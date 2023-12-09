@@ -130,14 +130,26 @@ export default () => {
         {
           type: 'box',
           layout: 'vertical',
-          contents: [
-            {
-              type: 'text',
-              text: 'P.S 一次多詞 或 空白 , 會影響搜尋結果',
-              color: '#ff7d7d',
-              size: 'sm',
-              weight: 'bold'
-            }
+          contents: [{
+            type: 'text',
+            text: '小提醒',
+            color: '#ff7d7d',
+            size: 'md',
+            weight: 'bold'
+          },
+          {
+            type: 'text',
+            text: '* 「一次多詞」或「空白」 , 會影響搜尋結果',
+            color: '#ff7d7d',
+            size: 'sm'
+            // weight: 'bold'
+          }, {
+            type: 'text',
+            text: '* 「換日」或「休市日」可能會查無資料',
+            color: '#ff7d7d',
+            size: 'sm'
+            // weight: 'bold'
+          }
           ],
           paddingAll: '0px',
           paddingTop: '10px'

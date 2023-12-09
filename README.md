@@ -1,23 +1,37 @@
-# 小蔬-編號89467 (linebot)
-## 你的蔬菜查價型機器人
+# 小蔬-編號89467
+#### Linebot 蔬菜查價機器人
 
-### ID：@919kcvbu
+## ID：@919kcvbu
 ![機器人ID QRcode](https://raw.githubusercontent.com/Leileisme/Linebot/main/images/readme/addFriend_919kcvbu.png)
+
 -----------------------------------
-# 介紹
+# 目錄
+
+- [介紹](#介紹)
+- [選單介面](#選單介面)
+- [使用說明](#使用說明)
+- [蔬果-每日預估價-畫面](#「蔬果-每日預估價」 畫面)
+- [休市日-畫面](#「休市日」 畫面)
+- [哪裡買-畫面](#「哪裡買」畫面)
+- [公開資料來源](#公開資料來源)
+- [免責聲明](#免責聲明)
+
+---------------------------------
+## 介紹
 第一次去傳統市場完全不知道菜價...
 不確定眼前的蔬菜往年行情在哪...
 別擔心！我會協助你了解每日菜價
 
 點選下方「使用說明」或手動輸入
 馬上開始查詢蔬果價格🥦
+
 -----------------------------------
-### 選單介面
+## 選單介面
 
 ![選單介面](https://raw.githubusercontent.com/Leileisme/Linebot/main/images/readme/menu.jpg)
 
 -----------------------------------
-### 使用說明
+## 使用說明
 
 
 #### 【當季蔬果-每日預估價】
@@ -42,21 +56,51 @@ P.S. 「一次多詞」 或 「空白」 會影響搜尋結果
 ![使用說明](https://raw.githubusercontent.com/Leileisme/Linebot/main/images/readme/manual.jpg)
 
 -----------------------------------
-### 「蔬果-每日預估價」 畫面
+## 「蔬果-每日預估價」 畫面
 1. 若為「--」則查無資料
 2. 若行情預警「警戒」則與比近年比「價差過高或過低」
+3. 點選下方「我現在就想要按鈕」，跳轉至「哪裡買」
+<br>
+<br>
 
 ![休市日畫面01](https://raw.githubusercontent.com/Leileisme/Linebot/main/images/readme/date01.jpg)
 
 ![休市日畫面02](https://raw.githubusercontent.com/Leileisme/Linebot/main/images/readme/date02.jpg)
+
 -----------------------------------
-### 「休市日」 畫面
+## 「休市日」 畫面
+<br>
+<br>
 
 ![休市日畫面](https://raw.githubusercontent.com/Leileisme/Linebot/main/images/readme/cloedDay.jpg)
 
 -----------------------------------
-### 「哪裡買」畫面
+##  「哪裡買」畫面
 下方出現 quick reply，使用者可選擇想去的商場，點選後連接 google map 搜尋
+<br>
+<br>
 
 ![哪裡買01](https://raw.githubusercontent.com/Leileisme/Linebot/main/images/readme/market01.jpg)
 ![哪裡買02](https://github.com/Leileisme/Linebot/blob/main/images/readme/market02.jpg)
+
+-----------------------------------
+## 公開資料來源
+
+台北農業產運銷股份有限公司
+https://www.tapmc.com.tw/Pages/Index
+
+當季好蔬果
+https://www.twfood.cc/
+
+-----------------------------------
+## 免責聲明
+
+免責聲明
+希望能將「當季好蔬果」好的立意讓使用更便利，
+故介接該資料並融合北農之公開資料，
+讓消費者能方便推估市場零售價格，
+不代表蔬果保證取得價或品質優劣，
+又因商品可能因品質差異、運送距離、環境陳列...等眾多因素影嚮價格。
+勿以此預估價格為殺價依據，
+有違本機器人與「當季好蔬果」網設立之本意，
+另以上資料僅供參考，恕不負責資料正確性之責任。
