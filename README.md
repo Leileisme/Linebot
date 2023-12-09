@@ -84,7 +84,7 @@
 
 -----------------------------------
 ## 四、「休市日」畫面
-一次提供近3個月的台北休市日
+一次提供近3個月的台北蔬果市場休市日
 <br>
 
 ![休市日畫面](https://raw.githubusercontent.com/Leileisme/Linebot/main/images/readme/cloedDay.jpg)
@@ -94,7 +94,7 @@
 -----------------------------------
 ##  五、「哪裡買」畫面
 下方出現 quick reply，使用者可選擇想去的商場，點選後超連接 google map 搜尋
-<br>
+
 
 ![哪裡買01](https://raw.githubusercontent.com/Leileisme/Linebot/main/images/readme/market01.jpg)
 ![哪裡買02](https://github.com/Leileisme/Linebot/blob/main/images/readme/market02.jpg)
@@ -109,6 +109,7 @@ https://www.tapmc.com.tw/Pages/Index
 
 2. 當季好蔬果<br>
 https://www.twfood.cc/
+<br>
 
 [返回目錄](#目錄)
 
