@@ -7,7 +7,7 @@
 不確定眼前的蔬菜往年行情在哪...<br>
 別擔心！我會協助你了解每日菜價<br>
 <br>
-加我好友後~
+輸入iID：@919kcvbu 加入好友~<br>
 點選下方「使用說明」或手動輸入<br>
 馬上開始查詢蔬果價格🥦<br>
 </p>
@@ -24,8 +24,8 @@
 - [一、選單介面](#一選單介面)
 - [二、使用說明](#二使用說明)
 - [三、蔬果-每日預估價-畫面](#三蔬果-每日預估價畫面)
-- [四、休市日-畫面](#四休市日畫面)
-- [五、哪裡買-畫面](#五哪裡買畫面)
+- [四、哪裡買-畫面](#四哪裡買畫面)
+- [五、休市日-畫面](#五休市日畫面)
 - [六、公開資料來源](#六公開資料來源)
 - [七、免責聲明](#七免責聲明)
 
@@ -93,23 +93,23 @@
 
 ---
 
-## 四、「休市日」畫面
-
-一次提供近 3 個月的台北蔬果市場休市日
-<br>
-
-![休市日畫面](https://raw.githubusercontent.com/Leileisme/Linebot/main/images/readme/cloedDay.jpg)
-
-[返回目錄](#目錄)
-
----
-
-## 五、「哪裡買」畫面
+## 四、「哪裡買」畫面
 
 下方出現 quick reply，使用者可選擇想去的商場，點選後超連接 google map 搜尋
 
 ![哪裡買01](https://raw.githubusercontent.com/Leileisme/Linebot/main/images/readme/market01.jpg)
 ![哪裡買02](https://github.com/Leileisme/Linebot/blob/main/images/readme/market02.jpg)
+
+[返回目錄](#目錄)
+
+---
+
+## 五、「休市日」畫面
+
+一次提供近 3 個月的台北蔬果市場休市日
+<br>
+
+![休市日畫面](https://raw.githubusercontent.com/Leileisme/Linebot/main/images/readme/cloedDay.jpg)
 
 [返回目錄](#目錄)
 
