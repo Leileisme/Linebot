@@ -4,9 +4,11 @@ import vegetableTemplates from '../templates/vegetable_templates.js'
 import url from 'node:url'
 
 export const vegetablesData = []
+export let finish = false
 
 export const update = async () => {
   console.log('更新資料')
+  finish = false
   // 每次清空陣列
   vegetablesData.splice(0, vegetablesData.length)
 
@@ -50,7 +52,12 @@ export const update = async () => {
         const template = vegetableTemplates()
         const img = $(this).find('img').attr('src')
         const imgUrl = new URL(img, 'https://www.twfood.cc/')
-        const title = $(this).find('a').attr('href').replace(/[^\u4e00-\u9fa5]+/g, ' ').replace(/\s+/g, ' ').trim()
+        const title = $(this)
+          .find('a')
+          .attr('href')
+          .replace(/[^\u4e00-\u9fa5]+/g, ' ')
+          .replace(/\s+/g, ' ')
+          .trim()
         const dayPrice = $(this).find('table').find('tr').eq(5).find('th').eq(0).text()
         const weekPrice = $(this).find('table').find('tr').eq(2).find('th').eq(0).text()
         template.body.contents[1].contents[0].contents[1].text = dayPrice
@@ -114,7 +121,12 @@ export const update = async () => {
         // 用正則表達式 / [\u4e00-\u9fa5] 抓取「中文」，並以 ' ' 空格取代其他字元
         // 「/\s+/g」 將多個空格合併為一個
         // 「.trim()」 去除字串兩端的空格
-        const title = $(this).find('a').attr('href').replace(/[^\u4e00-\u9fa5]+/g, ' ').replace(/\s+/g, ' ').trim()
+        const title = $(this)
+          .find('a')
+          .attr('href')
+          .replace(/[^\u4e00-\u9fa5]+/g, ' ')
+          .replace(/\s+/g, ' ')
+          .trim()
         const dayPrice = $(this).find('table').find('tr').eq(5).find('th').eq(0).text()
         const weekPrice = $(this).find('table').find('tr').eq(2).find('th').eq(0).text()
         template.body.contents[1].contents[0].contents[1].text = dayPrice
@@ -149,6 +161,7 @@ export const update = async () => {
   } catch (error) {
     console.log(error)
   }
+  finish = true
 }
 
 // update()

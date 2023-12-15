@@ -1,9 +1,15 @@
-import { vegetablesData } from '../data/vegetables_data.js'
+import { vegetablesData, finish } from '../data/vegetables_data.js'
 import _ from 'lodash'
 import fs from 'node:fs'
 
 export default async (e) => {
   try {
+    // 判斷資料完成才可以(文字帶改)
+    if (!finish) {
+      e.reply('等')
+      return
+    }
+
     const data = vegetablesData.filter((vegetableTemplate) => {
       return vegetableTemplate.body.contents[0].text.includes(e.message.text)
     })

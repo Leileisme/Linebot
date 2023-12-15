@@ -33,15 +33,9 @@ bot.on('message', (event) => {
   console.log('Received message:', event.message.text)
 
   if (event.message.type === 'text') {
-    const marketBuyMatch = marketBuy.filter(
-      el => event.message.text.includes(el))
-
-    const closedMatch = closed.filter(
-      el => event.message.text.includes(el))
-
-    const manualsMatch = manuals.filter(
-      el => event.message.text.includes(el)
-    )
+    const marketBuyMatch = marketBuy.filter((el) => event.message.text.includes(el))
+    const closedMatch = closed.filter((el) => event.message.text.includes(el))
+    const manualsMatch = manuals.filter((el) => event.message.text.includes(el))
 
     if (marketBuyMatch.length > 0) {
       market(event)
@@ -49,10 +43,6 @@ bot.on('message', (event) => {
       closedDay(event)
     } else if (manualsMatch.length > 0) {
       manual(event)
-    // 為什麼下面這個跑不出來?
-    // else if (event.message.text ==='使用說明') {
-      //   manual(event)
-    // }
     } else {
       console.log('else')
       vegetable(event)
