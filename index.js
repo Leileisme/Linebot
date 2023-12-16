@@ -44,7 +44,6 @@ bot.on('message', (event) => {
     } else if (manualsMatch.length > 0) {
       manual(event)
     } else {
-      console.log('else')
       vegetable(event)
     }
   }

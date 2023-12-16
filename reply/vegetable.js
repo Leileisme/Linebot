@@ -6,7 +6,7 @@ export default async (e) => {
   try {
     // 判斷資料完成才可以(文字帶改)
     if (!finish) {
-      e.reply('資料讀取中，過30秒再試一次')
+      e.reply('Loading最新資料~等我10秒><')
       return
     }
 
@@ -19,7 +19,7 @@ export default async (e) => {
       .map((reply) => {
         return {
           type: 'flex',
-          altText: '今天的蔬果多少錢ㄚ~~~',
+          altText: '來囉！熱騰騰的今日蔬果價~',
           contents: {
             type: 'carousel',
             contents: reply
