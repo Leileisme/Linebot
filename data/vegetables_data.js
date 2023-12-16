@@ -4,6 +4,7 @@ import vegetableTemplates from '../templates/vegetable_templates.js'
 import url from 'node:url'
 
 export const vegetablesData = []
+// 監聽是否抓好資料
 export let finish = false
 
 export const update = async () => {

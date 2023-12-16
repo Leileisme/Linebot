@@ -6,7 +6,7 @@ export default async (e) => {
   try {
     // 判斷資料完成才可以(文字帶改)
     if (!finish) {
-      e.reply('等')
+      e.reply('資料讀取中，過30秒再試一次')
       return
     }
 

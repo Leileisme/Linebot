@@ -8,7 +8,7 @@ import * as vegetables from './data/vegetables_data.js'
 import manual from './reply/manual.js'
 
 // 定期更新
-scheduleJob('0 0 * * *', () => {
+scheduleJob('2 3-13 * * *', () => {
   vegetables.update()
 })
 

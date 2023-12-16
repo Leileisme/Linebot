@@ -11,7 +11,7 @@ export default async (e) => {
     // https://developers.line.biz/en/reference/messaging-api/#other-common-specifications
     // encodeURI() 中文轉換編碼的語法
     // decodeURI() 編碼的語法轉成中文
-    template.quickReply.items[0].action.uri = encodeURI('https://www.google.com/maps/search/傳統市場')
+    template.quickReply.items[0].action.uri = encodeURI('https://www.google.com/maps/search/市場')
 
     template.quickReply.items[0].imageUrl =
       'https://raw.githubusercontent.com/Leileisme/Linebot/main/images/Logo/Logo2.png'
