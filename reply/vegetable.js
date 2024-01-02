@@ -6,7 +6,7 @@ export default async (e) => {
   try {
     // 判斷資料完成才可以(文字帶改)
     if (!finish) {
-      e.reply('Loading最新資料~等我10秒><')
+      e.reply('Loading最新資料~稍後再試')
       return
     }
 
